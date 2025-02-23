@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shop the best products at low prices with fast shipping in Litium. Discover great deals in our e-commerce store.">
+    <meta name="keywords" content="online shopping, technology, deals, online store, affordable ecommerce">
+    <meta name="author" content="Litium">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="index, follow">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Optimized CSS loading -->
+    <link rel="preload" href="style.css" as="style">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="slider-resources/slider.css">
+
+    <!-- Open Graph (for social media like Facebook, WhatsApp) -->
+    <meta property="og:title" content="Litium - Best Produtcs at Low Prices">
+    <meta property="og:description" content="Shop the best tech products at low prices with fast shipping.">
+    <meta property="og:image" content="https://cr.abgsc.com/contentassets/a00a5fe9e1bb4a37af3f1f1954e5d982/litium2020-logo-rgb_black.png">
+    <meta property="og:url" content="https://www.litium.com">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card (for sharing on Twitter) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Litium - Best Produtcs at Low Prices">
+    <meta name="twitter:description" content="Shop the best products at low prices with fast shipping.">
+    <meta name="twitter:image" content="https://cr.abgsc.com/contentassets/a00a5fe9e1bb4a37af3f1f1954e5d982/litium2020-logo-rgb_black.png">
+
+    <title>E-Commerce Example 1 (Full Version)</title>
+</head>
+<body>
+    <header>
+        <nav class="flex-container-nav"> <!-- This is nav container -->
+              
+            <div class="nav-container-item-1"> <!-- This is item 1 of nav container (logo container) -->
+                <a href="index.html">
+                    <img src="logo.webp" alt="Logo of website"> <!-- Logo of website-->
+                </a>
+            </div>
+
+            <!----------------------------------------------------------------------------------------------------------------------------------------------->
+
+            <div class="nav-container-item-2"> <!-- This is item 2 of nav container (search and categories container) -->
+                <div class="item-2-search"> <!-- This is search container -->
+                    <div class="search-container">
+                        <input id="search-input" type="text" placeholder="Search Litium" class="search-input"> <!-- This is search input -->
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="search-icon"> <!-- This is search icon -->
+                            <path fill="#7a7a7a" d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/>
+                        </svg>
+                    </div> 
+                </div>
+                <div class="item-2-categories"> <!-- This is categories container -->
+                    <div class="categories" id="electronics"> <!-- This is a category -->
+                        <a href="../search/search.html">Computación</a>
+                    </div>
+
+                    <div class="categories" id="computers"> <!-- This is a category -->
+                        <a href="../search/search.html">Electrónica</a>
+                    </div>
+
+                    <div class="categories" id="smart-home"> <!-- This is a category -->
+                        <a href="../search/search.html">Hogar</a>
+                    </div>
+
+                    <div class="categories" id="arts-and-crafts"> <!-- This is a category -->
+                        <a href="../search/search.html">Arte y Otros</a>
+                    </div>
+                    
+                    <div class="categories" id="see-all"> <!-- This is a category -->
+                        <a href="../search/search.html">Ver todo</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!----------------------------------------------------------------------------------------------------------------------------------------------->
+
+            <div class="nav-container-item-3"> <!-- This is Item 3 of Nav Container (login and some features like chart, favorites, notifications) -->
+                <a class="item-3-features" href="../loginregister/loginregister.html"> <!-- This is user container  -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"> <!-- This is user icon -->
+                        <path fill="#ffffff" d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z"/>
+                    </svg>
+                </a>
+
+                <a class="item-3-features" href="../favorites/favorites.html"> <!-- This is favorites container -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"> <!-- This is favorites icon -->
+                        <path fill="#ffffff" d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8l0-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5l0 3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20-.1-.1s0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5l0 3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2l0-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/>
+                    </svg>
+                </a>
+
+                <a class="item-3-features" href="../shoppingchart/shoppingchart.html"> <!-- This is shopping chart container -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"> <!-- This is shopping chart icon -->
+                        <path fill="#ffffff" d="M0 24C0 10.7 10.7 0 24 0L69.5 0c22 0 41.5 12.8 50.6 32l411 0c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3l-288.5 0 5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5L488 336c13.3 0 24 10.7 24 24s-10.7 24-24 24l-288.3 0c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5L24 48C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/>
+                    </svg>
+                </a>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="flex-container-main">
+
+            <div class="main-container-item-1"> <!-- This is for item 1 of main container (slider container) -->
+                <div class="item-1-slider"> <!-- This is slider container -->
+                    <div class="slider" id="slider">
+                        
+                        <a href="../search/search.html" class="slider-section">
+                            <img src="slider-resources/slider1.webp" alt="Slider image" class="slider-img">
+                        </a>
+                        
+                        <!----------------------------------------------------------------------------------------------------------------------------------->
+
+                        <a href="../search/search.html" class="slider-section">
+                            <img src="slider-resources/slider2.webp" alt="Slider image" class="slider-img">
+                        </a>
+                        
+                        <!----------------------------------------------------------------------------------------------------------------------------------->
+
+                        <a href="../search/search.html" class="slider-section">
+                            <img src="slider-resources/slider3.webp" alt="Slider image" class="slider-img">
+                        </a>
+
+                        <!----------------------------------------------------------------------------------------------------------------------------------->
+
+                        <a href="../search/search.html" class="slider-section">
+                            <img src="slider-resources/slider4.webp" alt="Slider image" class="slider-img">
+                        </a>
+
+                        <!----------------------------------------------------------------------------------------------------------------------------------->
+
+                        <a href="../search/search.html" class="slider-section">
+                            <img src="slider-resources/slider5.webp" alt="Slider image" class="slider-img">
+                        </a>
+
+                        <!----------------------------------------------------------------------------------------------------------------------------------->
+
+                        <a href="../search/search.html" class="slider-section">
+                            <img src="slider-resources/slider6.webp" alt="Slider image" class="slider-img">
+                        </a>
+                    </div>
+
+                    <div class="slider-btn slider-btn-right" id="btn-right">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                            <path fill="#ffffff" d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/>
+                        </svg>
+                    </div>
+                    <div class="slider-btn slider-btn-left" id="btn-left">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                            <path fill="#ffffff" d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <!----------------------------------------------------------------------------------------------------------------------------------------------->
+
+            <div class="main-container-item-2">
+
+                <!------------------------------------------------------------------------------------------------------------------------------------------->
+
+                <div class="item-2-title-container">
+                    <h2 class="item-2-title">Más vendido en placas de video</h2>
+                </div>
+
+                <!------------------------------------------------------------------------------------------------------------------------------------------->
+
+                <div class="item-2-products"> <!-- This is products for item 2, all the products of this container are here -->
+
+                    <!--------------------------------------------------------------------------------------------------------------------------------------->
+
+                    <a href="../product/product.html" class="item-2-product"> <!-- This is a product from product container -->
+                        <div class="product-image" alt="Image of product"> <!-- This is image of product -->
+                            <img src="product-resources/product1.webp">
+                        </div>
+
+                        <div class="product-title-and-price"> <!-- This is title, rating, price and installments of the product -->
+                            <div class="product-tar"> <!-- This is title and rating of the product (tar = title and rating) -->
+                                <h2 class="title">Placa de video AMD Radeon RX 6400 Series 4GB</h2>
+                                <div class="rating">4.6 <span>★★★★☆</span> (120)</div>
+                            </div>
+                            <div class="product-pai"> <!-- This is price and installments of the product (pai = price and installments) -->
+                                <span class="price">$199.000</span>
+                                <span class="installments">en 6 cuotas de $ 44.728</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!--------------------------------------------------------------------------------------------------------------------------------------->
+
+                    <a href="../product/product.html" class="item-2-product"> <!-- This is a product from product container -->
+                        <div class="product-image" alt="Image of product"> <!-- This is image of product -->
+                            <img src="product-resources/product2.webp">
+                        </div>
+
+                        <div class="product-title-and-price"> <!-- This is title, rating, price and installments of the product -->
+                            <div class="product-tar"> <!-- This is title and rating of the product (tar = title and rating) -->
+                                <h2 class="title">Placa de video NVIDIA ASUS GeForce GT 730 2GB</h2>
+                                <div class="rating">4.8 <span>★★★★★</span> (64)</div>
+                            </div>
+                            <div class="product-pai"> <!-- This is price and installments of the product (pai = price and installments) -->
+                                <span class="price">$84.999</span>
+                                <span class="installments">en 6 cuotas de $ 19.104</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!--------------------------------------------------------------------------------------------------------------------------------------->
+
+                    <a href="../product/product.html" class="item-2-product"> <!-- This is a product from product container -->
+                        <div class="product-image" alt="Image of product"> <!-- This is image of product -->
+                            <img src="product-resources/product3.webp">
+                        </div>
+
+                        <div class="product-title-and-price"> <!-- This is title, rating, price and installments of the product -->
+                            <div class="product-tar"> <!-- This is title and rating of the product (tar = title and rating) -->
+                                <h2 class="title">Placa de video NVIDIA ASUS GeForce GTX 1650 4GB</h2>
+                                <div class="rating">4.7 <span>★★★★☆</span> (28)</div>
+                            </div>
+                            <div class="product-pai"> <!-- This is price and installments of the product (pai = price and installments) -->
+                                <span class="price">$279.999</span>
+                                <span class="installments">en 6 cuotas de $ 62.934</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!--------------------------------------------------------------------------------------------------------------------------------------->
+
+                    <a href="../product/product.html" class="item-2-product"> <!-- This is a product from product container -->
+                        <div class="product-image" alt="Image of product"> <!-- This is image of product -->
+                            <img src="product-resources/product4.webp">
+                        </div>
+
+                        <div class="product-title-and-price"> <!-- This is title, rating, price and installments of the product -->
+                            <div class="product-tar"> <!-- This is title and rating of the product (tar = title and rating) -->
+                                <h2 class="title">Placa de video NVIDIA GeForce RTX 3050 6GB OC</h2>
+                                <div class="rating">4.8 <span>★★★★★</span> (44)</div>
+                            </div>
+                            <div class="product-pai"> <!-- This is price and installments of the product (pai = price and installments) -->
+                                <span class="price">$271.101</span>
+                                <span class="installments">en 6 cuotas de $ 60.934</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!--------------------------------------------------------------------------------------------------------------------------------------->
+
+                    <a href="../product/product.html" class="item-2-product"> <!-- This is a product from product container -->
+                        <div class="product-image" alt="Image of product"> <!-- This is image of product -->
+                            <img src="product-resources/product5.webp">
+                        </div>
+
+                        <div class="product-title-and-price"> <!-- This is title, rating, price and installments of the product -->
+                            <div class="product-tar"> <!-- This is title and rating of the product (tar = title and rating) -->
+                                <h2 class="title">Placa de video NVIDIA MSI GeForce RTX 4060 8GB OC</h2>
+                                <div class="rating">4.9 <span>★★★★★</span> (86)</div>
+                            </div>
+                            <div class="product-pai"> <!-- This is price and installments of the product (pai = price and installments) -->
+                                <span class="price">$721.836</span>
+                                <span class="installments">en 12 cuotas de $ 60.153</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!--------------------------------------------------------------------------------------------------------------------------------------->
+
+                    <a href="../product/product.html" class="item-2-product"> <!-- This is a product from product container -->
+                        <div class="product-image" alt="Image of product"> <!-- This is image of product -->
+                            <img src="product-resources/product6.webp">
+                        </div>
+
+                        <div class="product-title-and-price"> <!-- This is title, rating, price and installments of the product -->
+                            <div class="product-tar"> <!-- This is title and rating of the product (tar = title and rating) -->
+                                <h2 class="title">Placa de video NVIDIA Geforce RTX 3050 6GB</h2>
+                                <div class="rating">4.8 <span>★★★★★</span> (41)</div>
+                            </div>
+                            <div class="product-pai"> <!-- This is price and installments of the product (pai = price and installments) -->
+                                <span class="price">$283.018</span>
+                                <span class="installments">en 6 cuotas de $ 63.613</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!----------------------------------------------------------------------------------------------------------------------------------------------->
+
+            <div class="main-container-item-3">
+                <div class="item-3-information"></div>
+                <div class="item-3-information"></div>
+                <div class="item-3-information"></div>
+            </div>
+
+            <!----------------------------------------------------------------------------------------------------------------------------------------------->
+
+            <div class="main-container-item-4">
+
+                <!------------------------------------------------------------------------------------------------------------------------------------------->
+
+                <div class="item-4-title-container">
+                    <h2 class="item-4-title">Más vendido en computación<h2>
+                </div>
+
+                <!------------------------------------------------------------------------------------------------------------------------------------------->
+
+                <div class="item-4-products"> <!-- This is products for item 2, all the products of this container are here -->
+                    
+                    <!--------------------------------------------------------------------------------------------------------------------------------------->
+
+                    <a href="../product/product.html" class="item-4-product"> <!-- This is a product from product container -->
+                        <div class="product-image" alt="Image of product"> <!-- This is image of product -->
+                            <img src="product-resources/product7.webp">
+                        </div>
+
+                        <div class="product-title-and-price"> <!-- This is title, rating, price and installments of the product -->
+                            <div class="product-tar"> <!-- This is title and rating of the product (tar = title and rating) -->
+                                <h2 class="title">Disco Solido SSD 500GB Sata Crucial Bx500</h2>
+                                <div class="rating">4.8 <span>★★★★★</span> (2387)</div>
+                            </div>
+                            <div class="product-pai"> <!-- This is price and installments of the product (pai = price and installments) -->
+                                <span class="price">$39.262</span>
+                                <span class="installments">en 6 cuotas de $ 8.824</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!--------------------------------------------------------------------------------------------------------------------------------------->
+
+                    <a href="../product/product.html" class="item-4-product"> <!-- This is a product from product container -->
+                        <div class="product-image" alt="Image of product"> <!-- This is image of product -->
+                            <img src="product-resources/product8.webp">
+                        </div>
+
+                        <div class="product-title-and-price"> <!-- This is title, rating, price and installments of the product -->
+                            <div class="product-tar"> <!-- This is title and rating of the product (tar = title and rating) -->
+                                <h2 class="title">Memoria RAM Fury Beast DDR4 32GB</h2>
+                                <div class="rating">4.8 <span>★★★★★</span> (215)</div>
+                            </div>
+                            <div class="product-pai"> <!-- This is price and installments of the product (pai = price and installments) -->
+                                <span class="price">$89.760</span>
+                                <span class="installments">en 6 cuotas de $ 20.175</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!--------------------------------------------------------------------------------------------------------------------------------------->
+
+                    <a href="../product/product.html" class="item-4-product"> <!-- This is a product from product container -->
+                        <div class="product-image" alt="Image of product"> <!-- This is image of product -->
+                            <img src="product-resources/product9.webp">
+                        </div>
+
+                        <div class="product-title-and-price"> <!-- This is title, rating, price and installments of the product -->
+                            <div class="product-tar"> <!-- This is title and rating of the product (tar = title and rating) -->
+                                <h2 class="title">Micro Procesador AMD Ryzen 5 7600x 38mb 4,7GHz</h2>
+                                <div class="rating">4.9 <span>★★★★★</span> (53)</div>
+                            </div>
+                            <div class="product-pai"> <!-- This is price and installments of the product (pai = price and installments) -->
+                                <span class="price">$426.999</span>
+                                <span class="installments">en 12 cuotas de $ 35.583</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!--------------------------------------------------------------------------------------------------------------------------------------->
+
+                    <a href="../product/product.html" class="item-4-product"> <!-- This is a product from product container -->
+                        <div class="product-image" alt="Image of product"> <!-- This is image of product -->
+                            <img src="product-resources/product10.webp">
+                        </div>
+
+                        <div class="product-title-and-price"> <!-- This is title, rating, price and installments of the product -->
+                            <div class="product-tar"> <!-- This is title and rating of the product (tar = title and rating) -->
+                                <h2 class="title">Gabinete Kit Atx C/fuente, Teclado Mouse Parlante</h2>
+                                <div class="rating">4.6 <span>★★★★☆</span> (9)</div>
+                            </div>
+                            <div class="product-pai"> <!-- This is price and installments of the product (pai = price and installments) -->
+                                <span class="price">$52.527</span>
+                                <span class="installments">en 12 cuotas de $ 11.806</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!--------------------------------------------------------------------------------------------------------------------------------------->
+
+                    <a href="../product/product.html" class="item-4-product"> <!-- This is a product from product container -->
+                        <div class="product-image" alt="Image of product"> <!-- This is image of product -->
+                            <img src="product-resources/product11.webp">
+                        </div>
+
+                        <div class="product-title-and-price"> <!-- This is title, rating, price and installments of the product -->
+                            <div class="product-tar"> <!-- This is title and rating of the product (tar = title and rating) -->
+                                <h2 class="title">Motherboard Gigabyte AMD A520M V2 DDR4</h2>
+                                <div class="rating">4.8 <span>★★★★★</span> (242)</div>
+                            </div>
+                            <div class="product-pai"> <!-- This is price and installments of the product (pai = price and installments) -->
+                                <span class="price">$89.999</span>
+                                <span class="installments">en 6 cuotas de $ 20.228</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!--------------------------------------------------------------------------------------------------------------------------------------->
+
+                    <a href="../product/product.html" class="item-4-product"> <!-- This is a product from product container -->
+                        <div class="product-image" alt="Image of product"> <!-- This is image of product -->
+                            <img src="product-resources/product12.webp">
+                        </div>
+
+                        <div class="product-title-and-price"> <!-- This is title, rating, price and installments of the product -->
+                            <div class="product-tar"> <!-- This is title and rating of the product (tar = title and rating) -->
+                                <h2 class="title">Fuente de alimentación Corsair CX750 750W 80+</h2>
+                                <div class="rating">4.8 <span>★★★★★</span> (67)</div>
+                            </div>
+                            <div class="product-pai"> <!-- This is price and installments of the product (pai = price and installments) -->
+                                <span class="price">$95.665</span>
+                                <span class="installments">en 6 cuotas de $ 21.502</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!----------------------------------------------------------------------------------------------------------------------------------------------->
+
+            <div class="main-container-item-5">
+                <div class="item-5-title-container">
+                    <h2 class="item-5-title">Categorías más populares</h2>
+                </div>
+
+                <div class="item-5-categories">
+                    <a href="../search/search.html" class="categories-card">
+                        <img src="categories-resources/category1.webp">
+                    </a>
+                    <a href="../search/search.html" class="categories-card">
+                        <img src="categories-resources/category2.webp">
+                    </a>
+                    <a href="../search/search.html" class="categories-card">
+                        <img src="categories-resources/category3.webp">
+                    </a>
+                </div>
+            </div>
+
+            <!----------------------------------------------------------------------------------------------------------------------------------------------->
+
+            <div class="main-container-item-6">
+                <div class="item-6-title-container">
+                    <h2 class="item-6-title"></h2>
+                </div>
+                <div class="item-6-products">
+                    <div class="item-6-product">
+                        <div class="product-image-6"></div>
+                        <div class="product-title-and-price-6"></div>
+                    </div>
+
+                    <div class="item-6-product">
+                        <div class="product-image-6"></div>
+                        <div class="product-title-and-price-6"></div>
+                    </div>
+
+                    <div class="item-6-product">
+                        <div class="product-image-6"></div>
+                        <div class="product-title-and-price-6"></div>
+                    </div>
+
+                    <div class="item-6-product">
+                        <div class="product-image-6"></div>
+                        <div class="product-title-and-price-6"></div>
+                    </div>
+
+                    <div class="item-6-product">
+                        <div class="product-image-6"></div>
+                        <div class="product-title-and-price-6"></div>
+                    </div>
+
+                    <div class="item-6-product">
+                        <div class="product-image-6"></div>
+                        <div class="product-title-and-price-6"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-container-item-7">
+                <div class="item-7-title-container">
+                    <h2 class="item-7-title"></h2>
+                </div>
+                <div class="item-7-products">
+                    <div class="item-7-product">
+                        <div class="product-image-7"></div>
+                        <div class="product-title-and-price-7"></div>
+                    </div>
+
+                    <div class="item-7-product">
+                        <div class="product-image-7"></div>
+                        <div class="product-title-and-price-7"></div>
+                    </div>
+
+                    <div class="item-7-product">
+                        <div class="product-image-7"></div>
+                        <div class="product-title-and-price-7"></div>
+                    </div>
+
+                    <div class="item-7-product">
+                        <div class="product-image-7"></div>
+                        <div class="product-title-and-price-7"></div>
+                    </div>
+
+                    <div class="item-7-product">
+                        <div class="product-image-7"></div>
+                        <div class="product-title-and-price-7"></div>
+                    </div>
+
+                    <div class="item-7-product">
+                        <div class="product-image-7"></div>
+                        <div class="product-title-and-price-7"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="flex-container-footer">
+            <div class="footer-links">
+                <div class="links"></div>
+                <div class="links"></div>
+                <div class="links"></div>
+                <div class="links"></div>
+            </div>
+            <div class="footer-copyright">
+                <div class="copyright"></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="slider-resources/slider.js"></script>
+</body>
+</html>
