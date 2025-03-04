@@ -36,7 +36,7 @@ main {
 footer {
     width: 100%;
     max-width: 100%;
-    height: clamp(9em, 18vw, 12em);
+    height: clamp(11.5em, calc(100vw - 768px) * 0.7, 15.5em); 
 }
 
 /*--------------------------------------------------------------------------------------------*/
@@ -547,13 +547,13 @@ footer {
     height: 75%;
     justify-content: center;
     gap: 2em;
-    background-color: #7a7a7a;
+    background-color: #202020;
 }
 
 .links {
-    width: min(15vw, 15.5em);
+    width: clamp(13em, calc(100vw - 950px) * 0.5, 17em);
     height: 100%;
-    background-color: #444444;
+    background-color: #cf0707;
 }
 
 .footer-copyright {
@@ -562,13 +562,13 @@ footer {
     height: 25%;
     justify-content: center;
     padding: clamp(13px, 1.2vw, 16px);
-    background-color: #242424;
+    background-color: #eeeeee;
 }
 
 .copyright {
     width: clamp(65em, 75vw, 84em);
     height: 100%;
-    background-color: #a8a8a8;
+    background-color: #ffffff;
 }
 
 /*--------------------------------------------------------------------------------------------*/
@@ -614,6 +614,12 @@ footer {
     .main-container-item-5 {
         height: clamp(20em, 45vw, 27em);
     }
+
+    /*----------------------------------------- FOOTER ----------------------------------------*/
+
+    .links {
+        width: 100%;
+    }
 }
 
 /*---------------------------------------------------------------------------------------------*/
@@ -636,7 +642,7 @@ footer {
     }
     
     .main-container-item-2, .main-container-item-4, .main-container-item-5, 
-    .main-container-item-6, .main-container-item-7, .copyright {
+    .main-container-item-6, .main-container-item-7 {
         width: 40em;
     }
     
@@ -668,6 +674,29 @@ footer {
     }
 
     .item-3-information {
+        width: 100%;
+    }
+
+    /*----------------------------------------- FOOTER ----------------------------------------*/
+
+    footer {
+        height: 30em;
+    }
+    
+    .footer-links {
+        display: grid;
+        height: 90%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 2em;
+        padding: 1.5em;
+    }
+
+    .footer-copyright {
+        height: 10%;
+    }
+
+    .copyright {
         width: 100%;
     }
 }
@@ -717,7 +746,7 @@ footer {
     }
 
     .main-container-item-2, .main-container-item-4, .main-container-item-5, 
-    .main-container-item-6, .main-container-item-7, .copyright {
+    .main-container-item-6, .main-container-item-7 {
         width: 22em;
     }
 
@@ -749,24 +778,15 @@ footer {
     }
 
     .footer-links {
-        display: grid;
+        height: 93%;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4, 1fr);
-        justify-content: center;
         gap: 1em;
-        height: 95%;
-        width: 100%;
-    }
-
-    .links {
-        width: 65%;
-        height: 100%;
-        margin-left: 17.5%;
+        padding: 1em 4em;
     }
 
     .footer-copyright {
-        height: 5%;
-        padding: 9px;
+        height: 7%;
     }
 }
 
