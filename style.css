@@ -567,14 +567,15 @@ footer {
     gap: 0.7em;
     justify-content: center;
     align-items: center;
+    color: #ffffff;
 }
 
 .links-support h2 {
-    font-size: 20px;
+    font-size: clamp(14px, calc(100vw - 768px) * 0.03, 20px);
 }
 
-.links-support h2, .links-support span {
-    color: #ffffff;
+.links-support span {
+    font-size: clamp(11.5px, calc(100vw - 768px) * 0.03, 15px);
 }
 
         /*--------------------------------------------------------------------------*/
@@ -582,13 +583,13 @@ footer {
 .links-follow {
     display: flex;
     flex-direction: column;
-    gap: 1em;
     justify-content: center;
     align-items: center;
+    gap: 1em;
 }
 
 .title-follow {
-    font-size: 20px;
+    font-size: clamp(18px, calc(100vw - 768px) * 0.09, 20px);
     color: #ffffff;
 }
 
@@ -602,8 +603,8 @@ footer {
 
 .icons-follow {
     flex-direction: row;
-    height: 3em;
-    gap: 1.5em;
+    height: clamp(2em, calc(100vw - 768px) * 0.06, 3em);
+    gap: clamp(1em, calc(100vw - 768px) * 0.06, 1.5em);
 }
 
 .icons-follow a {
@@ -611,7 +612,7 @@ footer {
     border-radius: 10px;
 }
 
-.icons-follow a svg {
+.icons-follow a svg, .work-reference svg {
     width: 70%;
     height: 70%;
 }
@@ -634,46 +635,38 @@ footer {
     display: flex;
     width: 80%;
     padding: 0.5em;
-    font-size: 15px;
+    font-size: clamp(12px, calc(100vw - 950px) * 0.03, 15px);
     color: white;
     border: 1px solid #ffffff;
-    border-radius: 9px;
+    border-radius: 12px;
     justify-content: center;
     text-decoration: none;
 }
 
         /*--------------------------------------------------------------------------*/
 
-.links-work {
+.links-work, .work-reference {
     display: flex;
-    flex-direction: column;
-    gap: 1em;
     justify-content: center;
     align-items: center;
 }
 
-.work-title {
-    font-size: 20px;
+.links-work {
+    flex-direction: column;
+    gap: 1em;
     color: #ffffff;
 }
 
+.work-title {
+    font-size: clamp(18px, calc(100vw - 768px) * 0.025, 20px);
+    text-align: center;
+}
+
 .work-reference {
-    height: 4em;
-    width: 3.5em;
-    display: flex;
-    flex-direction: row;
-    height: 3em;
-    gap: 1.5em;
+    width: clamp(3em, calc(100vw - 768px) * 0.025, 3.5em);
+    height: clamp(2.5em, calc(100vw - 768px) * 0.025, 3em);
     border-radius: 10px;
-    justify-content: center;
-    align-items: center;
 }
-
-.work-reference svg {
-    width: 70%;
-    height: 70%;
-}
-
 
         /*--------------------------------------------------------------------------*/
 
@@ -682,7 +675,7 @@ footer {
     width: 100%;
     height: 25%;
     justify-content: center;
-    padding: clamp(13px, 1.2vw, 16px);
+    padding: clamp(10px, 1.2vw, 16px);
     background-color: #eeeeee;
 }
 
@@ -693,6 +686,10 @@ footer {
     height: 100%;
     justify-content: center;
     align-items: center;
+}
+
+.copyright span {
+    font-size: clamp(13px, calc(100vw - 480px) * 0.03, 17px);
 }
 
 /*--------------------------------------------------------------------------------------------*/
@@ -741,8 +738,12 @@ footer {
 
     /*----------------------------------------- FOOTER ----------------------------------------*/
 
-    .links {
+    .links, .copyright {
         width: 100%;
+    }
+
+    .buttons {
+        font-size: clamp(10.5px, calc(100vw - 768px) * 0.1, 12px);
     }
 }
 
@@ -816,12 +817,38 @@ footer {
         padding: 1.5em;
     }
 
-    .footer-copyright {
-        height: 10%;
+    .links-support h2 {
+        font-size: clamp(14px, calc(100vw - 480px) * 0.2, 20px);
+    }
+    
+    .links-support span {
+        font-size: clamp(11.5px, calc(100vw - 480px) * 0.2, 15px);
+    }
+    
+    .title-follow {
+        font-size: clamp(18px, calc(100vw - 480px) * 0.2, 20px);
+    }
+    
+    .buttons {
+        font-size: clamp(12px, calc(100vw - 480px) * 0.15, 15px);
+    }
+    
+    .icons-follow {
+        height: clamp(2em, calc(100vw - 480px) * 0.2, 3em);
+        gap: clamp(1em, calc(100vw - 480px) * 0.2, 1.5em);
+    }
+    
+    .work-title {
+        font-size: clamp(18px, calc(100vw - 480px) * 0.2, 20px);
+    }
+    
+    .work-reference {
+        width: clamp(3em, calc(100vw - 480px) * 0.2, 3.5em);
+        height: clamp(2.5em, calc(100vw - 480px) * 0.2, 3em);
     }
 
-    .copyright {
-        width: 100%;
+    .footer-copyright {
+        height: 10%;
     }
 }
 
