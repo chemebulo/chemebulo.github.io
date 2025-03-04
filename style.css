@@ -541,6 +541,8 @@ footer {
     height: 100%;
 }
 
+        /*--------------------------------------------------------------------------*/
+
 .footer-links {
     display: flex;
     width: 100%;
@@ -551,10 +553,129 @@ footer {
 }
 
 .links {
+    display: flex;
+    flex-direction: column;
     width: clamp(13em, calc(100vw - 950px) * 0.5, 17em);
     height: 100%;
-    background-color: #cf0707;
 }
+
+        /*--------------------------------------------------------------------------*/
+
+.links-support {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7em;
+    justify-content: center;
+    align-items: center;
+}
+
+.links-support h2 {
+    font-size: 20px;
+}
+
+.links-support h2, .links-support span {
+    color: #ffffff;
+}
+
+        /*--------------------------------------------------------------------------*/
+
+.links-follow {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-follow {
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.title-follow, .icons-follow, .icons-follow a {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons-follow {
+    flex-direction: row;
+    height: 3em;
+    gap: 1.5em;
+}
+
+.icons-follow a {
+    height: 100%;
+    border-radius: 10px;
+}
+
+.icons-follow a svg {
+    width: 70%;
+    height: 70%;
+}
+
+.icons-follow a:hover, .buttons:hover, .work-reference:hover {
+    background-color: #5e5e5e;
+    transition: all 0.3s ease-in-out;
+}
+
+        /*--------------------------------------------------------------------------*/
+
+.links-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.buttons {
+    display: flex;
+    width: 80%;
+    padding: 0.5em;
+    font-size: 15px;
+    color: white;
+    border: 1px solid #ffffff;
+    border-radius: 9px;
+    justify-content: center;
+    text-decoration: none;
+}
+
+        /*--------------------------------------------------------------------------*/
+
+.links-work {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+.work-title {
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.work-reference {
+    height: 4em;
+    width: 3.5em;
+    display: flex;
+    flex-direction: row;
+    height: 3em;
+    gap: 1.5em;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.work-reference svg {
+    width: 70%;
+    height: 70%;
+}
+
+
+        /*--------------------------------------------------------------------------*/
 
 .footer-copyright {
     display: flex;
@@ -566,8 +687,12 @@ footer {
 }
 
 .copyright {
+    display: flex;
+    flex-direction: column;
     width: clamp(65em, 75vw, 84em);
     height: 100%;
+    justify-content: center;
+    align-items: center;
     background-color: #ffffff;
 }
 
