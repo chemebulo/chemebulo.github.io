@@ -1,0 +1,82 @@
+.item-1-slider {
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+}
+
+.slider {
+    display: flex;
+    width: 600%;
+    height: 100%;
+    margin-left: -100%;
+}
+
+.slider-section {
+    width: 100%;
+}
+
+.slider-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider-btn {
+    display: flex;
+    width: 35px;
+    height: 55px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 8px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-btn svg {
+    width: 75%;
+    height: 75%;
+}
+
+.slider-btn:hover {
+    background-color: #e7e7e746;
+    transition: background-color 0.3s ease;
+}
+
+.slider-btn-left {
+    left: 10px;
+}
+
+.slider-btn-right {
+    right: 10px;
+}
+
+/*--------------------------------------------------------------------------------------------*/
+/*-------------------------------------- MEDIA QUERIES ---------------------------------------*/
+/*--------------------------------------------------------------------------------------------*/
+
+@media (max-width: 1425px) {
+
+    /*------------------------------------------- MAIN ----------------------------------------*/
+
+    .item-1-slider {
+        border-radius: 0;
+    }
+}
+
+/*---------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------*/
+
+@media (max-width: 768px) {     /* Media queries for Smartphones */
+    .slider-btn {
+        width: 20px;
+        height: 40px;
+    }
+}
