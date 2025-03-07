@@ -1,0 +1,277 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+html, body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    background-color: #ebebeb;
+}
+
+
+header {
+    width: 100%;
+    height: clamp(4em, 15vw, 5.5em);
+    position: fixed;
+    background-color: #202020;
+    box-shadow: 0 2px 5px #0000001a;
+    z-index: 1000;
+}
+
+
+main {
+    height: auto;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: clamp(4em, 15vw, 5.5em);
+}
+
+
+footer {
+    width: 100%;
+    max-width: 100%;
+    height: 4em; 
+    background-color: #d1d1d1;
+}
+
+/*--------------------------------------------------------------------------------------------*/
+/*-------------------------------------------- NAV -------------------------------------------*/
+/*--------------------------------------------------------------------------------------------*/
+
+.flex-container-nav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+.logo-container {
+    width: clamp(13em, 15vw, 17.5em);
+    align-items: center;
+}
+
+.logo-container a {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-container a img {
+    max-width: 100%;
+    height: auto;
+    padding: 5%;
+    object-fit: contain;
+}
+
+
+/*--------------------------------------------------------------------------------------------*/
+/*------------------------------------------- MAIN -------------------------------------------*/
+/*--------------------------------------------------------------------------------------------*/
+
+.flex-container-main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 3em;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+        /*--------------------------------------------------------------------------*/
+
+.login-register__container {
+    display: flex;
+    width: 550px;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.5em;
+    background-color: rgb(255, 255, 255);
+}
+
+.container__form {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 90%;
+    gap: 1.5em;
+    align-items: center;
+    justify-content: center;
+}
+
+        /*--------------------------------------------------------------------------*/
+
+.form__title {
+    display: flex;
+    width: 100%;
+    height: 8%;
+    font-size: 14px;
+    color: #000000;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+        /*--------------------------------------------------------------------------*/
+
+.form__input {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 30%;
+    gap: 0.5em;
+}
+
+.input__email, .input__password, .input__title, .input__body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+}
+
+.input__title {
+    font-size: 1em;
+    justify-content: end;
+    padding-bottom: 6px;
+}
+
+.input__body input {
+    height: 100%;
+    width: 100%;
+    padding: 8px;
+    color: #000000;
+    border-radius: 9px;
+    border: 1px solid #7a7a7a;
+    font-size: clamp(10px, 2.3vw, 16px);
+    background: transparent;
+}
+
+.input__body input:focus {
+    border-color: #707070;
+    box-shadow: 0 0 5px rgba(141, 141, 141, 0.5);
+    outline: none;
+}
+
+        /*--------------------------------------------------------------------------*/
+
+.form__action {
+    width: 100%;
+    height: 40%;
+    background-color: rgb(255, 0, 0);
+}
+
+/*--------------------------------------------------------------------------------------------*/
+/*------------------------------------------ FOOTER ------------------------------------------*/
+/*--------------------------------------------------------------------------------------------*/
+
+.flex-container-footer {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2.5em;
+    font-size: 12px;
+    color: #000000;
+}
+
+.footer__left-side, .footer__right-side {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+}
+
+.footer__left-side a, .footer__right-side a {
+    text-decoration: none;
+    color: #3483FA;
+}
+
+
+/*--------------------------------------------------------------------------------------------*/
+/*-------------------------------------- MEDIA QUERIES ---------------------------------------*/
+/*--------------------------------------------------------------------------------------------*/
+
+@media (max-width: 768px) {     /* Media queries for Tablets */
+
+    /*----------------------------------------- NAVBAR ----------------------------------------*/
+    
+
+
+    /*------------------------------------------- MAIN ----------------------------------------*/
+
+    .container__form {
+        gap: 0.8em;
+    }
+    
+    .flex-container-main {
+        padding: clamp(0.7em, 4vw, 3em);
+    }
+    
+    .login-register__container {
+        width: clamp(280px, 80vw, 550px);
+        height: 90%;
+    }
+
+    .form__title {
+        font-size: 11px;
+        border-radius: 7px;
+    }
+
+    /*----------------------------------------- FOOTER ----------------------------------------*/
+
+    footer {
+        height: 8em;    
+    }
+
+    .flex-container-footer {
+        flex-direction: column;
+        justify-content: center;
+        gap: 1em;
+        padding: 0;
+    }
+
+    .footer__left-side {
+        flex-direction: column;
+    }
+}
+
+/*---------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------*/
+
+@media (max-width: 480px) {     /* Media queries for Smartphones */
+
+    /*----------------------------------------- NAVBAR ----------------------------------------*/
+    
+
+
+    /*------------------------------------------- FOOTER --------------------------------------*/
+    
+
+}
+
+/*---------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------*/
+
+@media (max-width: 300px) {
+    body {
+        display: none;
+    }
+}
