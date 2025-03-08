@@ -86,7 +86,6 @@ footer {
     flex-direction: column;
     width: 100%;
     height: 100%;
-    padding: 3em;
     align-items: center;
     justify-content: center;
     flex: 1;
@@ -96,18 +95,18 @@ footer {
 
 .login-register__container {
     display: flex;
-    width: 550px;
-    height: 100%;
+    width: 425px;
+    height: min(600px, 90%);
     align-items: center;
     justify-content: center;
     border-radius: 1.5em;
-    background-color: rgb(255, 255, 255);
+    background-color: #ffffff;
 }
 
 .container__form {
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 80%;
     height: 90%;
     gap: 1.5em;
     align-items: center;
@@ -122,7 +121,6 @@ footer {
     height: 8%;
     font-size: 14px;
     color: #000000;
-    border-radius: 10px;
     align-items: center;
     justify-content: center;
 }
@@ -133,7 +131,7 @@ footer {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 30%;
+    height: 33%;
     gap: 0.5em;
 }
 
@@ -148,6 +146,7 @@ footer {
     font-size: 1em;
     justify-content: end;
     padding-bottom: 6px;
+    color: #3a3a3a;
 }
 
 .input__body input {
@@ -155,8 +154,8 @@ footer {
     width: 100%;
     padding: 8px;
     color: #000000;
-    border-radius: 9px;
-    border: 1px solid #7a7a7a;
+    border-radius: 7px;
+    border: 1px solid #b9b9b9;
     font-size: clamp(10px, 2.3vw, 16px);
     background: transparent;
 }
@@ -167,13 +166,91 @@ footer {
     outline: none;
 }
 
+.fpassword__container {
+    padding-top: 6px;
+}
+
+.fpassword__container a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #3483FA;
+}
+
         /*--------------------------------------------------------------------------*/
 
 .form__action {
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    height: 40%;
-    background-color: rgb(255, 0, 0);
+    height: 35%;
+    gap: 0.5em;
 }
+
+.action__button-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.action__button {
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+    border: 1px solid #b9b9b9;
+    font-weight: bold;
+}
+
+.button__continue {
+    color: #ffffff;
+    background-color: #3483FA;
+}
+
+.button__continue:hover {
+    background-color: #2968C8;
+    transition: all 0.3s ease-in-out;
+}
+
+.button__create-account {
+    display: flex;
+    background-color: #ffffff;
+    border: none;
+    color: #3483FA;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 13.5px;
+}
+
+.button__create-account:hover {
+    background-color: #ECF3FC;
+    transition: all 0.3s ease-in-out;
+}
+
+.action__divider {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    justify-content: center;
+}
+
+.action__divider-p {
+    display: flex;
+    width: 10%;
+    justify-content: center;
+    align-items: center;
+}
+
+.button__google {
+    color: #474747;
+    background-color: #ffffff;
+}
+
+.button__google:hover {
+    background-color: #F8FAFF;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid #D2E3FC;
+}
+
 
 /*--------------------------------------------------------------------------------------------*/
 /*------------------------------------------ FOOTER ------------------------------------------*/
@@ -209,30 +286,6 @@ footer {
 
 @media (max-width: 768px) {     /* Media queries for Tablets */
 
-    /*----------------------------------------- NAVBAR ----------------------------------------*/
-    
-
-
-    /*------------------------------------------- MAIN ----------------------------------------*/
-
-    .container__form {
-        gap: 0.8em;
-    }
-    
-    .flex-container-main {
-        padding: clamp(0.7em, 4vw, 3em);
-    }
-    
-    .login-register__container {
-        width: clamp(280px, 80vw, 550px);
-        height: 90%;
-    }
-
-    .form__title {
-        font-size: 11px;
-        border-radius: 7px;
-    }
-
     /*----------------------------------------- FOOTER ----------------------------------------*/
 
     footer {
@@ -257,13 +310,30 @@ footer {
 
 @media (max-width: 480px) {     /* Media queries for Smartphones */
 
-    /*----------------------------------------- NAVBAR ----------------------------------------*/
+    /*------------------------------------------- MAIN ----------------------------------------*/
     
-
-
-    /*------------------------------------------- FOOTER --------------------------------------*/
+    .login-register__container {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
     
+    .container__form {
+        gap: 1em;
+    }
 
+    .form__title {
+        height: 8%;
+        font-size: 13px;
+    }
+
+    .form__input {
+        height: 38%;
+    }
+    
+    .form__action {
+        height: 38%;
+    }
 }
 
 /*---------------------------------------------------------------------------------------------*/
