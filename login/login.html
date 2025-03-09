@@ -12,56 +12,56 @@
     <link rel="preload" href="style.css" as="style">
     <link rel="stylesheet" type="text/css" href="style.css">
 
-    <title>Litium E-Commerce - Login</title> 
+    <title>Litium E-Commerce - Iniciar Sesión</title> 
 </head>
 <body>
     <header>
         <nav class="flex-container-nav"> <!-- This is nav container -->
             <div class="logo-container"> <!-- This is logo container -->
                 <a href="../index.html">
-                    <img src="../logo.webp" alt="Logo of website"> <!-- Logo of website-->
+                    <img src="../logo.webp" alt="Logo of website"> <!-- Logo of website -->
                 </a>
             </div>
         </nav>
     </header>
     
     <main>
-        <div class="flex-container-main">
-            <div class="login-register__container">
-                <form class="container__form">
+        <div class="flex-container-main"> <!-- This is flex container of main -->
+            <div class="login__container"> <!-- This is login container -->
+                <form class="container__form"> <!-- This is container of form-->
                 
-                    <div class="form__title">
+                    <div class="form__title"> <!-- This is title of the form -->
                         <h1>¡Bienvenido a Litium!</h1>
                     </div>
 
                     <!-------------------------------------------------------------------------------------------------------------------------------------->
                     <!-------------------------------------------------------------------------------------------------------------------------------------->
 
-                    <div class="form__input"> <!-- Email o teléfono y contraseña-->
+                    <div class="form__input"> <!-- This is input container of the form, have a many inputs and one link -->
                         
-                        <div class="input__email"> <!-- Email o teléfono -->
-                            <div class="input__title">
+                        <div class="input__email"> <!-- This is email container -->
+                            <div class="input__title"> <!-- This is title container of input -->
                                 <span>Correo electrónico</span>
                             </div>
-                            <div class="input__body">
-                                <input id="email-input" type="email" class="email-input">
+                            <div class="input__body"> <!-- This is container of input -->
+                                <input id="email-input" type="email" class="email-input" required>
                             </div>
                         </div> 
 
                         <!---------------------------------------------------------------------------------------------------------------------------------->
 
-                        <div class="input__password"> <!-- Contraseña -->
-                            <div class="input__title">
+                        <div class="input__password"> <!-- This is password container -->
+                            <div class="input__title"> <!-- This is title container of input -->
                                 <span>Contraseña</span>
                             </div>
-                            <div class="input__body">
-                                <input id="password-input" type="password" class="password-input">
+                            <div class="input__body"> <!-- This is container of input -->
+                                <input id="password-input" type="password" class="password-input" required>
                             </div>
                         </div> 
 
                         <!---------------------------------------------------------------------------------------------------------------------------------->
 
-                        <div class="fpassword__container"> <!--Olvidaste la contraseña? -->
+                        <div class="fpassword__container"> <!--This is fpassword__container -->
                             <a href="../help/help.html">¿Olvidaste la contraseña?</a>
                         </div> 
                     </div>
@@ -69,21 +69,21 @@
                     <!-------------------------------------------------------------------------------------------------------------------------------------->
                     <!-------------------------------------------------------------------------------------------------------------------------------------->
 
-                    <div class="form__action"> <!-- Continuar, Crear cuenta, Divider, Iniciar con google-->
+                    <div class="form__action"> <!-- This is action container of the form, have a many buttons with different features -->
 
-                        <div class="action__button-container"> <!-- Continuar -->
-                            <button class="action__button button__continue">Continuar</button>
+                        <div class="action__button-container"> <!-- This is button "continue" container -->
+                            <button class="action__button button__continue" type="submit">Continuar</button>
                         </div> 
 
                         <!---------------------------------------------------------------------------------------------------------------------------------->
 
-                        <div class="action__button-container"> <!-- Crear cuenta -->
-                            <a class="action__button button__create-account" href="../register/register.html">Crear Cuenta</a>
+                        <div class="action__button-container"> <!-- This is button "create account" container -->
+                            <a class="action__button button__create-account" href="../register/register.html">Crear una cuenta</a>
                         </div>
                         
                         <!---------------------------------------------------------------------------------------------------------------------------------->
 
-                        <div class="action__button-container" id="divider-container"> <!-- Divider -->
+                        <div class="action__button-container" id="divider-container"> <!-- This is a divider -->
                             <div class="action__divider">
                                 <hr></hr>
                             </div>
@@ -95,7 +95,7 @@
 
                         <!---------------------------------------------------------------------------------------------------------------------------------->
 
-                        <div class="action__button-container"> <!-- Iniciar con google -->
+                        <div class="action__button-container"> <!-- This is button "Log in with google" container -->
                             <button class="action__button button__google">Iniciar sesión con Google</button>
                         </div> 
                     </div>
@@ -124,6 +124,6 @@
         </div>
     </footer>
 
-    <script src="loginregister.js"></script>
+    <script src="login.js"></script>
 </body>
 </html>
