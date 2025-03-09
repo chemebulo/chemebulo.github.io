@@ -3,9 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register</title>
+    <meta name="description" content="Create your Litium account securely. Sign up to start shopping.">
+    <meta name="author" content="Litium">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+
+    <!-- Optimized CSS loading -->
+    <link rel="preload" href="style.css" as="style">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>Litium E-Commerce - Crear una cuenta</title> 
 </head>
 <body>
-    <h1>IN PROGRESS</h1>
+    <header>
+        <nav class="flex-container-nav"> <!-- This is nav container -->
+            <div class="logo-container"> <!-- This is logo container -->
+                <a href="../index.html">
+                    <img src="../logo.webp" alt="Logo of website"> <!-- Logo of website -->
+                </a>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="flex-container-main"> <!-- This is flex container of main -->
+            <div class="register__container"> <!-- This is register container -->
+                <form class="container__form"> <!-- This is container of form-->
+                
+                    <div class="form__title"> <!-- This is title of the form -->
+                        <h1>Crear una cuenta</h1>
+                    </div>
+
+                    <!-------------------------------------------------------------------------------------------------------------------------------------->
+                    <!-------------------------------------------------------------------------------------------------------------------------------------->
+
+                    <div class="form__input"> <!-- This is input container of the form, have a many inputs  -->
+                        
+                        <div class="name-and-lastname__container"> <!-- This is name and last name container -->
+
+                            <div class="input__name-and-lastname"> <!-- This is name container -->
+                                <div class="input__title"> <!-- This is title container of input -->
+                                    <span>Nombre</span>
+                                </div>
+                                <div class="input__body"> <!-- This is container of input -->
+                                    <input id="name-input" type="text" class="name-input" required>
+                                </div>
+                            </div> 
+
+                            <div class="input__name-and-lastname"> <!-- This is last name container -->
+                                <div class="input__title"> <!-- This is title container of input -->
+                                    <span>Apellido</span>
+                                </div>
+                                <div class="input__body"> <!-- This is container of input -->
+                                    <input id="lastname-input" type="text" class="lastname-input" required>
+                                </div>
+                            </div> 
+                        </div>
+
+                        <!---------------------------------------------------------------------------------------------------------------------------------->
+                        <!---------------------------------------------------------------------------------------------------------------------------------->
+
+                        <div class="input__email"> <!-- This is email container -->
+                            <div class="input__title"> <!-- This is title container of input -->
+                                <span>Correo electrónico</span>
+                            </div>
+                            <div class="input__body"> <!-- This is container of input -->
+                                <input id="email-input" type="email" class="email-input" required>
+                            </div>
+                        </div>  
+
+                        <!---------------------------------------------------------------------------------------------------------------------------------->
+                        <!---------------------------------------------------------------------------------------------------------------------------------->
+
+                        <div class="input__user"> <!-- This is user container -->
+                            <div class="input__title"> <!-- This is title container of input -->
+                                <span>Nombre de usuario</span>
+                            </div>
+                            <div class="input__body"> <!-- This is container of input -->
+                                <input id="user-input" type="text" class="user-input" required>
+                            </div>
+                        </div> 
+
+                        <!---------------------------------------------------------------------------------------------------------------------------------->
+                        <!---------------------------------------------------------------------------------------------------------------------------------->
+
+                        <div class="input__password"> <!-- This is password container -->
+                            <div class="input__title"> <!-- This is title container of input -->
+                                <span>Contraseña</span>
+                            </div>
+                            <div class="input__body"> <!-- This is container of input -->
+                                <input id="password-input" type="password" class="password-input" required>
+                            </div>
+                        </div> 
+                    </div>
+
+                    <!-------------------------------------------------------------------------------------------------------------------------------------->
+                    <!-------------------------------------------------------------------------------------------------------------------------------------->
+
+                    <div class="form__action"> <!-- This is action container of the form, have a checkbox and "continue" button -->
+                        <div class="action__checkbox-container">
+                            <input type="checkbox" required>
+                            <span>He leído y aceptado todos los <a href="../help/help.html">términos y condiciones.</a></span>
+                        </div>
+
+                        <div class="action__button-container"> <!-- This is button "continue" container -->
+                            <button class="button__continue" type="submit">Continuar</button>
+                        </div> 
+                    </div>
+
+                    <!-------------------------------------------------------------------------------------------------------------------------------------->
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="flex-container-footer"> <!-- This is container of footer -->
+
+            <div class="footer__left-side"> <!-- This is left side of footer container -->
+                <a href="../help/help.html" target=_blank>Cómo cuidamos tu privacidad</a>
+                <span>Copyright © 2025 Litium E-Commerce S.R.L.</span>
+            </div>
+            
+            <!---------------------------------------------------------------------------------------------------------------------------------------------->
+            
+            <div class="footer__right-side"> <!-- This is right side of footer container -->
+                <span>Protegido por reCAPTCHA</span>
+                <a href="../help/help.html" target=_blank>Privacidad</a> 
+                <a href="../help/help.html" target=_blank>Condiciones</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="login.js"></script>
 </body>
 </html>
